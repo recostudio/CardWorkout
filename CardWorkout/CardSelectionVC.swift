@@ -11,7 +11,11 @@ class CardSelectionVC: UIViewController {
 
     @IBOutlet var cardImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
+
     var cards: [UIImage] = Card.allValues
+
+    var cards: [UIImage] = Card.allValues
+
     
     var timer: Timer!
     
@@ -23,7 +27,7 @@ class CardSelectionVC: UIViewController {
             button.layer.cornerRadius = 8
         }
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         timer.invalidate()
@@ -34,12 +38,23 @@ class CardSelectionVC: UIViewController {
     }
     
     @objc func showRandomImage() {
+
+        cardImageView.image = cards.randomElement() ?? UIImage(named: "AS")
         cardImageView.image = cards.randomElement() ?? UIImage(named: "AS")
         print("Timer fired off after 0.5second")
         
     }
     
     @IBAction func stopButtonTapped(_ sender: Any) {
+
+    
+    }
+    
+    @IBAction func restartButtonTapped(_ sender: Any) {
+        
+    }
+    
+    @IBAction func rulesButtonTapped(_ sender: Any) {
         timer.invalidate()
     }
     
@@ -50,6 +65,7 @@ class CardSelectionVC: UIViewController {
     
     @IBAction func rulesButtonTapped(_ sender: Any) {
 //        i dont use it because i've used segue present screen modaly , i can delete it but left for explain
+
     }
     
 }
