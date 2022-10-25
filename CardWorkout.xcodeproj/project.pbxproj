@@ -65,10 +65,8 @@
 				BEAFD2D728FD427A00436C47 /* LaunchScreen.storyboard */,
 				BEAFD2DA28FD427A00436C47 /* Info.plist */,
 				BEAFD2E028FD42D300436C47 /* CardSelectionVC.swift */,
-<<<<<<< HEAD
-=======
 				BE404BCA290831BF002002B0 /* Card.swift */,
->>>>>>> CWStoryboardsFinished
+				BE404BCA290831BF002002B0 /* Card.swift */,
 			);
 			path = CardWorkout;
 			sourceTree = "<group>";
@@ -147,10 +145,8 @@
 				BEAFD2CD28FD427900436C47 /* AppDelegate.swift in Sources */,
 				BEAFD2CF28FD427900436C47 /* SceneDelegate.swift in Sources */,
 				BEAFD2E128FD42D300436C47 /* CardSelectionVC.swift in Sources */,
-<<<<<<< HEAD
-=======
 				BE404BCB290831BF002002B0 /* Card.swift in Sources */,
->>>>>>> CWStoryboardsFinished
+				BE404BCB290831BF002002B0 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
