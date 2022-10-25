@@ -13,9 +13,6 @@ class CardSelectionVC: UIViewController {
     @IBOutlet var buttons: [UIButton]!
 
     var cards: [UIImage] = Card.allValues
-
-    var cards: [UIImage] = Card.allValues
-
     
     var timer: Timer!
     
@@ -56,16 +53,6 @@ class CardSelectionVC: UIViewController {
     
     @IBAction func rulesButtonTapped(_ sender: Any) {
         timer.invalidate()
-    }
-    
-    @IBAction func restartButtonTapped(_ sender: Any) {
-        timer.invalidate()
-        startTimer()
-    }
-    
-    @IBAction func rulesButtonTapped(_ sender: Any) {
-//        i dont use it because i've used segue present screen modaly , i can delete it but left for explain
-
     }
     
 }
