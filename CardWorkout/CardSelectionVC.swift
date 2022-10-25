@@ -1,10 +1,3 @@
-//
-//  CardSelectionVC.swift
-//  CardWorkout
-//
-//  Created by Maciej Szostak on 17/10/2022.
-//
-
 import UIKit
 
 class CardSelectionVC: UIViewController {
@@ -37,18 +30,18 @@ class CardSelectionVC: UIViewController {
     @objc func showRandomImage() {
 
         cardImageView.image = cards.randomElement() ?? UIImage(named: "AS")
-        cardImageView.image = cards.randomElement() ?? UIImage(named: "AS")
         print("Timer fired off after 0.5second")
         
     }
     
     @IBAction func stopButtonTapped(_ sender: Any) {
+        timer.invalidate()
 
-    
     }
     
     @IBAction func restartButtonTapped(_ sender: Any) {
-        
+        timer.invalidate()
+        startTimer()
     }
     
     @IBAction func rulesButtonTapped(_ sender: Any) {
