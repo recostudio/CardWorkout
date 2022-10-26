@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,62 +13,61 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CardSelectionVC" customModule="CardWorkout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10C" translatesAutoresizingMaskIntoConstraints="NO" id="OWA-4I-11M">
-                                <rect key="frame" x="62.5" y="83.5" width="250" height="350"/>
+                                <rect key="frame" x="82" y="198" width="250" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Pai-Nf-7CC"/>
                                     <constraint firstAttribute="height" constant="350" id="XZw-RP-K95"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIy-Pk-vlt">
-                                <rect key="frame" x="57.5" y="483.5" width="260" height="50"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <rect key="frame" x="77" y="598" width="260" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2Cz-T2-JI9"/>
                                     <constraint firstAttribute="width" constant="260" id="eeF-iE-sTH"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="STOP!">
+                                <buttonConfiguration key="configuration" style="tinted" image="stop.circle" catalog="system" title="STOP!" imagePadding="4" cornerStyle="medium">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
-                                    <color key="baseForegroundColor" red="0.96078431369999995" green="0.94901960780000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdI-xW-rDL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBb-yE-aUd">
-                                <rect key="frame" x="53.5" y="553.5" width="115" height="50"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBb-yE-aUd">
+                                <rect key="frame" x="77" y="668" width="115" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="Ovr-bF-grE"/>
                                     <constraint firstAttribute="height" constant="50" id="u5G-9t-bw6"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="RESTART">
+                                <buttonConfiguration key="configuration" style="tinted" image="arrow.clockwise" catalog="system" title="Restart" imagePadding="1" cornerStyle="medium">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
-                                    <color key="baseForegroundColor" red="0.96078431369999995" green="0.94901960780000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="restartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IV5-am-K4n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzW-LK-rSp">
-                                <rect key="frame" x="202.5" y="553.5" width="115" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <rect key="frame" x="222" y="668" width="115" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="182-fu-GaS"/>
                                     <constraint firstAttribute="width" constant="115" id="hfP-Ra-KFg"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="RULES">
+                                <buttonConfiguration key="configuration" style="tinted" image="list.bullet.rectangle" catalog="system" title="Rules" imagePadding="2" cornerStyle="medium">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
-                                    <color key="baseForegroundColor" red="0.96078431369999995" green="0.94901960780000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="rulesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8C-dB-4oa"/>
                                     <segue destination="zkA-aa-Y9R" kind="presentation" id="Xwe-96-FOd"/>
                                 </connections>
                             </button>
@@ -88,9 +87,6 @@
                     </view>
                     <connections>
                         <outlet property="cardImageView" destination="OWA-4I-11M" id="5Fh-n0-eg5"/>
-                        <outletCollection property="buttons" destination="KIy-Pk-vlt" collectionClass="NSMutableArray" id="f2B-04-dxG"/>
-                        <outletCollection property="buttons" destination="uBb-yE-aUd" collectionClass="NSMutableArray" id="a8Z-mo-rz6"/>
-                        <outletCollection property="buttons" destination="mzW-LK-rSp" collectionClass="NSMutableArray" id="9dn-IL-hMA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -102,23 +98,23 @@
             <objects>
                 <viewController id="zkA-aa-Y9R" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XxI-Kd-gb8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcQ-z4-7ks">
-                                <rect key="frame" x="30" y="127" width="315" height="48"/>
+                                <rect key="frame" x="30" y="175" width="354" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The value of each card represents the number of exercise you do.  Jack = 11, Queen = 12,  King = 13, Ace = 14" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghx-hj-gs4">
-                                <rect key="frame" x="30" y="200" width="315" height="107.5"/>
+                                <rect key="frame" x="30" y="248" width="354" height="107.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♠️ = Push-ups ❤️ = Sit-up ♣️ = Burpees ♦️ = Jumping Jacks" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzq-0Q-YV1">
-                                <rect key="frame" x="87.5" y="382.5" width="200" height="100.5"/>
+                                <rect key="frame" x="107" y="430.5" width="200" height="100.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="XoL-QQ-fOD"/>
                                 </constraints>
@@ -148,6 +144,9 @@
     </scenes>
     <resources>
         <image name="10C" width="691" height="1056"/>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
+        <image name="stop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
